@@ -35,17 +35,23 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][:lives] = []
       end 
     end
-    pigeon_list.each do |name_key, name_value|
-      name_value.each do |attr_key, attr_value|
-        if attr_key == :color 
-          if prop_value.include?(name_key)
-            pigeon_list[name_key][attr_key] << prop_value
+  end
+  data.each do |attribute_key, attribute_value|
+    attribute_value.each do |prop_key, prop_value|
+      prop_value.each do |x|
+        pigeon_list.each do |name_key, name_value|
+          name_value.each do |attr_key, attr_value|
+            if attr_key == :color 
+              if prop_value.include?(name_key)
+                pigeon_list[name_key][attr_key] << prop_value
+              end 
+            end 
           end 
         end 
-      end 
+      end
     end 
-  end
+  end   
   pigeon_list
 end
 
-#
+
