@@ -45,7 +45,17 @@ def nyc_pigeon_organizer(data)
               if x == name_key
                 pigeon_list[name_key][:color] << prop_key
               end 
-            end 
+            end
+            if attribute_key == :gender && attr_key == :gender
+              if x == name_key
+                pigeon_list[name_key][:gender] << prop_key
+              end 
+            end
+            if attribute_key == :lives && attr_key == :lives
+              if x == name_key
+                pigeon_list[name_key][:lives] << prop_key
+              end 
+            end
           end 
         end 
       end
