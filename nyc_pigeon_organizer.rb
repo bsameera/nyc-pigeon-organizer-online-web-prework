@@ -34,13 +34,10 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][:gender] = []
         pigeon_list[name][:lives] = []
       end 
-    end 
+    end
+    
   end
   pigeon_list
 end
 
-#if prop_value.include?(name)
-#          if attribute_key == :color
-#            pigeon_list[name][:color] << prop_key
-#          end 
-#        end
+#
