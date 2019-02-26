@@ -43,7 +43,7 @@ def nyc_pigeon_organizer(data)
           name_value.each do |attr_key, attr_value|
             if attr_key == :color 
               if x == name_key
-                pigeon_list[name_key][:color] << x
+                pigeon_list[name_key][:color] << prop_key
               end 
             end 
           end 
